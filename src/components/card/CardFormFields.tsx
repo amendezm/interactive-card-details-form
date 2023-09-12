@@ -1,4 +1,4 @@
-import { Button, Field } from "../common"
+import { Button, DateField, Field } from "../common"
 
 export const CardFormFields = () => {
   return (
@@ -18,21 +18,12 @@ export const CardFormFields = () => {
         options={{ required: "Can't be blank", validate: { invalidNumber: validateCardNumber } }}
       />
       <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col">
-          <label className="uppercase text-xs text-very-dark-violet font-normal tracking-[0.1em]">
-            Exp. Date (MM/YY)
-          </label>
-          <div className="grid grid-cols-2 gap-3">
-            <Field name="month" placeholder="MM" mask="99" />
-            <Field name="year" placeholder="YY" mask="99" />
-          </div>
-        </div>
+        <DateField name="cardExpirationDate" />
         <Field
           name="cardCvc"
           label="CVC"
           placeholder="e.g. 123"
           mask="999"
-          maxLength={3}
           options={{ required: "Can't be blank", validate: { invalidCVC: validateCVC } }}
         />
       </div>
