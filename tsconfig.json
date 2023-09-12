@@ -26,7 +26,8 @@
       "@/components": ["./components/index.ts"],
       "@/hooks": ["./hooks/index.ts"],
       "@/utils": ["./utils/index.ts"],
-      "@/containers": ["./containers/index.ts"]
+      "@/containers": ["./containers/index.ts"],
+      "@/types": ["./types/index.ts"]
     }
   },
   "include": ["src"],
