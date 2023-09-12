@@ -15,8 +15,6 @@ export const ErrorMessage: FC<ErrorProps> = ({ name = "" }) => {
   }
 
   return (
-    <span className="text-sm tracking-tight font-semibold text-strawberry-red">{`${
-      errors?.[name]?.message || "This field is required"
-    }`}</span>
+    <span className="text-[12px] font-light text-red">{`${errors?.[name]?.message || "This field is required"}`}</span>
   )
 }

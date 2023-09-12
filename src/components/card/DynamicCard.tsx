@@ -43,7 +43,7 @@ export const DynamicCard = () => {
           <div className="flex flex-col text-white">
             <p className="text-2xl mb-6 tracking-[0.1em]">{cardNumber || Default.number}</p>
             <div className="flex justify-between">
-              <span className="uppercase tracking-wider text-sm font-light">
+              <span className="uppercase tracking-wider text-sm font-light max-w-[270px] break-words">
                 {cardholderName || Default.holderName}
               </span>
               <span className="text-sm tracking-[0.1em]">{cardExpirationDate || Default.expirationDate}</span>
