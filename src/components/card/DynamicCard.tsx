@@ -4,7 +4,7 @@ import cardLogo from "@/assets/card-logo.svg"
 
 export const DynamicCard = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="shrink-0 flex flex-col gap-8">
       <figure className="relative w-fit z-20">
         <img src={cardFront} />
         <div className="absolute top-0 left-0 w-full h-full p-8 pb-6 z-30 flex flex-col justify-between">
