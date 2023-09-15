@@ -16,7 +16,10 @@ export const Field: FC<FieldProps> = ({ options = {}, name, label, className, ..
     <div className="relative w-full flex flex-col space-y-2">
       <div className={classNames("flex justify-between", { "justify-end": !label })}>
         {label && (
-          <label htmlFor={inputId} className="uppercase text-xs text-very-dark-violet font-normal tracking-[0.1em]">
+          <label
+            htmlFor={inputId}
+            className="uppercase text-[0.65rem] xs:text-xs text-very-dark-violet font-normal tracking-[0.1em]"
+          >
             {label}
           </label>
         )}

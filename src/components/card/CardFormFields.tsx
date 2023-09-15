@@ -2,7 +2,7 @@ import { Button, DateField, Field } from "../common"
 
 export const CardFormFields = () => {
   return (
-    <div className="grow flex flex-col gap-6">
+    <div className="grow flex flex-col gap-6 max-w-md">
       <Field
         name="cardHolderName"
         label="Cardholder Name"
@@ -17,7 +17,7 @@ export const CardFormFields = () => {
         mask="9999 9999 9999 9999"
         options={{ required: "Can't be blank", validate: { invalidNumber: validateCardNumber } }}
       />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid xs:grid-cols-2 gap-4">
         <DateField name="cardExpirationDate" />
         <Field
           name="cardCvc"

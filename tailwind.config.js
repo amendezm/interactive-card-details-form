@@ -8,6 +8,9 @@ export default {
         "dark-grayish-violet": "hsl(279, 6%, 55%)",
         "very-dark-violet": "hsl(278, 68%, 11%)",
         red: "hsl(0, 100%, 66%)"
+      },
+      screens: {
+        xs: "380px"
       }
     }
   },
