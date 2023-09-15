@@ -27,6 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
+![screely-1694783023477](https://github.com/amendezm/interactive-card-details-form/assets/26444448/0b5520ff-60b4-4767-b23f-40dfef4332f9)
+
+
 ### Links
 
 - Solution URL: [https://github.com/amendezm/interactive-card-details-form](https://github.com/amendezm/interactive-card-details-form)
