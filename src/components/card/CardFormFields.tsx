@@ -9,6 +9,7 @@ export const CardFormFields = () => {
         placeholder="e.g. Jane Appleseed"
         maxLength={40}
         options={{ required: "Can't be blank" }}
+        autoComplete="cc-name"
       />
       <Field
         name="cardNumber"
@@ -16,6 +17,7 @@ export const CardFormFields = () => {
         placeholder="e.g. 1234 5678 9123 0000"
         mask="9999 9999 9999 9999"
         options={{ required: "Can't be blank", validate: { invalidNumber: validateCardNumber } }}
+        autoComplete="cc-number"
       />
       <div className="grid xs:grid-cols-2 gap-4">
         <DateField name="cardExpirationDate" />
@@ -25,6 +27,7 @@ export const CardFormFields = () => {
           placeholder="e.g. 123"
           mask="999"
           options={{ required: "Can't be blank", validate: { invalidCVC: validateCVC } }}
+          autoCapitalize="cc-csc"
         />
       </div>
       <Button type="submit" className="mt-4">

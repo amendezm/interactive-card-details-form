@@ -50,6 +50,7 @@ export const DateField: FC<DateFieldProps> = ({ name }) => {
           value={values.month}
           onChange={handleChange}
           className={classNames({ "border-red": errors[name] })}
+          autoComplete="cc-exp-month"
         />
         <Input
           name="year"
@@ -58,6 +59,7 @@ export const DateField: FC<DateFieldProps> = ({ name }) => {
           value={values.year}
           onChange={handleChange}
           className={classNames({ "border-red": errors[name] })}
+          autoComplete="cc-exp-year"
         />
       </div>
       <ErrorMessage name={name} />
