@@ -10,8 +10,7 @@ export const FormContainer = () => {
   return (
     <Form
       defaultValues={INITIAL_DATA}
-      onSubmit={data => {
-        console.log(data)
+      onSubmit={() => {
         setIsCompleted(true)
       }}
       className={`w-full lg:max-w-[60rem] absolute left-0 lg:left-1/2 top-0 lg:top-1/2 
